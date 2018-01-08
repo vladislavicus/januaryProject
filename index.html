@@ -3,23 +3,34 @@
 <head>
     <meta charset="UTF-8" />
     <title>Minimal JS front-end App Example</title>
-    <script src="book.js"></script>
-    <script
-            src="https://code.jquery.com/jquery-3.2.1.js"
-            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-            crossorigin="anonymous"></script>
+    <script src="number.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+        getIdFromButtonsAndAddListeners();
+    });
+    </script>
 </head>
 <body>
-<h1>Public Library</h1>
-<h2>An Example of a Minimal JavaScript front-end App</h2>
-<p>This app supports the following operations:</p>
-<menu>
-    <li><a href="listBooks.html"><button type="button">List all books</button></a></li>
-    <li><a href="createBook.html"><button type="button">Add a new book</button></a></li>
-    <li><a href="updateBook.html"><button type="button">Update a book</button></a></li>
-    <li><a href="deleteBook.html"><button type="button">Delete a book</button></a></li>
-    <li><button type="button" onclick="Book.clearData()">Clear database</button></li>
-    <li><button type="button" onclick="Book.createTestData()">Create test data</button></li>
-</menu>
+ <table id="demoTable">
+     <tbody>
+       <tr height="75">
+           <td width="75"><img name="z_1" border="1" id="1" src="images/1.png" width="75" height="75"></td>
+           <td width="75"><img name="z_2" border="1" id="2" src="images/2.png" width="75" height="75"></td>
+           <td width="75"><img name="z_3" border="1" id="3" src="images/3.png" width="75" height="75"></td>
+       </tr>
+       <tr>
+           <td width="75"><img name="z_4" border="1" id="4" src="images/4.png" width="75" height="75"></td>
+           <td width="75"><img name="z_5" border="1" id="5" src="images/5.png" width="75" height="75"></td>
+           <td width="75"><img name="z_6" border="1" id="6" src="images/6.png" width="75" height="75"></td>
+       </tr>
+       <tr>
+           <td width="75"><img name="z_7" border="1" id="7" src="images/7.png" width="75" height="75"></td>
+           <td width="75"><img name="z_8" border="1" id="8" src="images/8.png" width="75" height="75"></td>
+           <td width="75"><img name="z_9" border="1" id="9" src="images/9.png" width="75" height="75"></td>
+       </tr>
+     </tbody>
+ </table>
+ </menu>
 </body>
 </html>
