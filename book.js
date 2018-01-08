@@ -28,7 +28,7 @@ Book.createTestData = function () {
 Book.saveAllToLocalStorage=function(){
     var bookString="";
     bookString=Json.stringify(Book.instances);
-    localStorage.setItem("bookss",bookString);
+    localStorage.setItem("booksss",bookString);
 };
 Book.loadAll=function () {
     var bookString="";
